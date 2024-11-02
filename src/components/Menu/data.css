@@ -32,7 +32,7 @@ span{
   .Column_3 {
     top: -27px;
     left: 520px;
-    width: 400px;
+    width: 300px;
     height: 839px;
     position: absolute;
     background-color:#F0E5F1;
@@ -427,8 +427,8 @@ span{
     background-color: rgba(255, 255, 255, 1);
   }
   .data-text32 {
-    top: 37px;
-    left: 235px;
+    top: 40px;
+    left: 215px;
     color: rgba(0, 0, 0, 1);
     height: auto;
     position: absolute;
@@ -694,7 +694,7 @@ span{
   }
   .data-rectangle8 {
     top: 100px;
-    right: 120px;
+    right: 175px;
     width: 400px;
     height: 600px;
     position: absolute;
@@ -703,9 +703,87 @@ span{
     align-content: center;
     z-index:101;
   }
+  .generate-button{
+    top: 230px;
+    right: 145px;
+    width: 125px;
+    height: 40px;
+    border-radius:10px;
+    position: absolute;
+    background-color:black;
+    align-items: center;
+    align-content: center;
+  }
+  .graph-settings{
+    left:675px;
+    top:100px;
+    height:600px;
+    width:600px;
+    position:absolute;
+  }
+  .generate-table{
+    top: 230px;
+    right: 10px;
+    width: 125px;
+    height: 40px;
+    border-radius:10px;
+    position: absolute;
+    background-color:black;
+    align-items: center;
+    align-content: center;
+  }
+  .generate-text{
+    right:15px;
+    top:10px;
+    position:absolute;
+    color: white;
+  }
+  ul {
+    list-style-type: disc;
+    font-size:15px;
+    right:160px;
+    top:60px;
+    position:absolute;
+  }
+  li{
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  .ticker-1{
+    font-size:22px;
+    font-weight:bold;
+    top: 30px;
+    right: 100px;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    z-index:101;
+  }
+  .results-page {
+    top:90px;
+    left: 30px;
+    width: 280px;
+    height: 290px;
+    border-radius:5px;
+    position: absolute;
+    background-color:white;
+    align-items: center;
+    align-content: center;
+  }
+  .results-page2 {
+    top:425px;
+    left: 30px;
+    width: 280px;
+    height: 300px;
+    border-radius:5px;
+    position: absolute;
+    background-color:white;
+    align-items: center;
+    align-content: center;
+  }
   .data-text48 {
     top: 258px;
-    left: 1025px;
+    left: 975px;
     color: black;
     height: auto;
     position: absolute;
@@ -714,4 +792,23 @@ span{
     line-height: 24px;
     z-index:102;
   }
-  
+  .Model-Header{
+    top: 40px;
+    left: 35px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 24px;
+    z-index:2;
+  }
+  .Results-Header{
+    top: 40px;
+    left: 40px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 24px;
+    z-index:2;
+  }

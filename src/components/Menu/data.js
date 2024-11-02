@@ -1,24 +1,28 @@
 import React, { useState } from 'react'
 import Settings from '../../images/Union.png'
 import { Helmet } from 'react-helmet'
+import graph from '../../images/stock.png'
 import './data.css'
 const Data = (props) => {
   const[ModelActive, setModelActive] = useState(0);
 const[DataActive, setDataActive] = useState(0);
-
+const[ResultsActive,setResultsActive] = useState(0);
 function Model(){
     setModelActive(1);
     setDataActive(0);
+    setResultsActive(0);
 };
 function Results(){
- console.log("BYE");
+ setResultsActive(1);
+ setDataActive(0);
+ setModelActive(0);
 }
 function LiveTrading(){
   console.log("B");
  }
  function BigData(){
     setDataActive(1);
-
+    setResultsActive(0);
     setModelActive(0);
  }
   return (
@@ -34,7 +38,7 @@ function LiveTrading(){
                     <span onClick = {Model}>Model</span>
                   </span>
                   <span className="data-text14">
-                    <span>Results</span>
+                    <span onClick = {Results}>Results</span>
                   </span>
                   <span className="data-text16">
                     <span >Live Trading</span>
@@ -148,6 +152,9 @@ function LiveTrading(){
           <span>Explain and Tips on Hover?</span>
         </span>
         <div className = "Model_Choice"style = {{zIndex:ModelActive}}>
+        <span className="Model-Header">
+          <span>Model Choices</span>
+        </span>
         <div className="data-input-field10">
           <span className="data-text20 BodyBase">
             <span>HyperParam 1</span>
@@ -185,9 +192,56 @@ function LiveTrading(){
           <input type="text" placeholder="Value" className="data-input15" />
         </div>
         </div>
-        <span className="data-Model M3bodylarge" style={{zIndex:ModelActive}}>
-          <span>Model Choice</span>
+        <img src = {graph} className = "graph-settings" style = {{zIndex:ResultsActive*1000}}></img>
+        <div className = "Column_2" style = {{zIndex:ResultsActive}}>
+        <div className = "results-page">
+            <span className = "ticker-1" >
+              Ticker 1 
+            </span>
+            <ul>
+              <li>Dates</li>
+              <li>Models</li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+        </ul>
+        <div className = "generate-button">
+          <span className = "generate-text">
+            Generate Graph
+          </span>
+        </div>
+        <div className = "generate-table">
+          <span className = "generate-text">
+            Generate Table
+          </span>
+        </div>
+        </div>
+        <div className = "results-page2">
+        <span className = "ticker-1" >
+              Ticker 1 
+            </span>
+            <ul>
+              <li>Dates</li>
+              <li>Models</li>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+        </ul>
+        <div className = "generate-button">
+          <span className = "generate-text">
+            Generate Graph
+          </span>
+        </div>
+        <div className = "generate-table">
+          <span className = "generate-text">
+            Generate Table
+          </span>
+        </div>
+        </div>
+        <span className="Results-Header" style = {{zIndex:ResultsActive}}>
+          <span>Summary</span>
         </span>
+        </div>
       </div>
   )
 }
